@@ -3,7 +3,7 @@
         <div class="reg_form">
             <h3 style="text-align: center;">Регистрация</h3>
             <CustomInput iconType="pi pi-user" label="Username" v-model="username"></CustomInput>
-            <CustomInput iconType="pi pi-lock" label="Password" v-model="password"></CustomInput>
+            <CustomInput inputType="password" iconType="pi pi-lock" label="Password" v-model="password"></CustomInput>
             <div style="text-align: center;">
                 <ButtonGroup>
                     <Button @click="backToLogin" label="Отменить" severity="danger" icon="pi pi-times" />

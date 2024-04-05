@@ -8,19 +8,6 @@ export const useUserStore = defineStore('useUserStore', {
         tokenData: JSON.parse(localStorage.getItem('token')!),
     }),
     getters: {
-        // paginatedGames(state) {
-        //     if (this.currentPage === 1) {
-        //         return state.listOfGames.slice(0, 100);
-        //     } else {
-        //         const nextCount = this.currentPage * 100 - 100;
-        //         var g = state.listOfGames.slice(nextCount, 100 * this.currentPage);
-        //         return g;
-        //     }
-        // },
-        // listOfPages(state) {
-        //     const p = state.listOfGames.length / 100
-        //     return Math.round(p);
-        // }
     },
     actions: {
         async login(username: string, userpassword: string) {

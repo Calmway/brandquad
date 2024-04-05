@@ -41,7 +41,6 @@ export abstract class BaseApi {
                     console.log('Unauthorized request to API', error);
                     return new Promise(function(resolve) {
                         swal.fire(error.response?.data?.message ?? error.response?.data?.error, '', 'warning').then(() => {
-                            // check is current route is not login then
                              window.location.assign('');
                             resolve({ errorMessage: error.response });
                         });

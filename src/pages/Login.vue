@@ -3,7 +3,7 @@
         <div class="login_form">
             <h3 style="text-align: center;">Вход</h3>
             <CustomInput iconType="pi pi-user" label="Username" v-model="username"></CustomInput>
-            <CustomInput iconType="pi pi-lock" label="Password" v-model="password"></CustomInput>
+            <CustomInput inputType="password" iconType="pi pi-lock" label="Password" v-model="password"></CustomInput>
             <div><router-link :to="{ name: 'register' }">Зарегистрироваться</router-link></div>
             <div style="text-align: center;">
                 <Button @click="submit" label="Войти" icon="pi pi-sign-in" :disabled="!username || !password" />
